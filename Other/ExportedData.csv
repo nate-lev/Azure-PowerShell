@@ -1,3 +1,0 @@
-#TYPE System.Management.Automation.PSCustomObject
-"VMId","VMName","VMSize","VMOSType","VMPowerState","VMIPAddress"
-"7ff42aef-7ba2-4c04-b502-0ec341632a71","example-machine","Standard_DS1_v2","Windows","VM stopped","10.0.2.4"
