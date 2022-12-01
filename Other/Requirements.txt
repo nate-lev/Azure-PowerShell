@@ -1,9 +1,0 @@
-Get all VMs in subscription, output to csv
-
-- ID (e.g. Resource Id/Instance Id)
-- Name
-- Size/SKU (e.g. Standard_D2_v3/m5.large)
-- Operating System (Windows or Linux is fine here, no need to get the version)
-- Power State (e.g. Running/Stopped etc.)
-- IP Address
-- Tags (separated by semicolon)
