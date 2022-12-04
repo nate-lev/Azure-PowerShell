@@ -22,6 +22,7 @@ foreach ($vm in $vms) {
     $vmTags = $tags.Tags.Keys + $tags.Tags.Values
    }
 
+   # Assign required outputs to values
    $output=[pscustomobject]@{
        'VM Id' = $vm.VmId
        'VM IP' = $IPAddr
