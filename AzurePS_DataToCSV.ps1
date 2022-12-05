@@ -9,8 +9,8 @@ $vms = Get-AzVM
 
 foreach ($vm in $vms) {
    # Set separate variables for VM IP address
-   $networkProfile = $vm.NetworkProfile.NetworkInterfaces.id.Split("/") | Select -Last 1
-   $IPAddr = (Get-AzNetworkInterface -Name $networkProfile).IpConfigurations.PrivateIpAddress
+   $networkProfile = $vm.NetworkProfile.NetworkInterfaces.id.Split("/") | Select -Last 1 # Get output containing full network profile path, split and then obtain last part of output
+   $IPAddr = (Get-AzNetworkInterface -Name $networkProfile).IpConfigurations.PrivateIpAddress # Get Private IP address from NIC stored in variable above
 
    # Set separate loop to get VM Power State
    foreach ($rg in $rgs) {
