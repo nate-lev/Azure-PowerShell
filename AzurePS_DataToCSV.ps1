@@ -34,6 +34,6 @@ foreach ($vm in $vms) {
    }
    # Output info to console
    $output
-   # Output info to csv
-   $output | Export-Csv "C:\Users\Nate\Documents\PowerShell Projects\Azure PowerShell\ExportedData.csv" -Append
+   # Output info to csv - user can change folder path
+   $output | Export-Csv "<folder-path\filename.csv>" -Append
 }
